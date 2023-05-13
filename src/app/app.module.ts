@@ -17,6 +17,7 @@ import { LoginPageComponent } from './components/login-page/login-page.component
 import { RegistrationPageComponent } from './components/registration-page/registration-page.component';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { TokenInterceptor } from './shared/classes/token.interceptor';
+import { FavouritesPageComponent } from './components/favourites-page/favourites-page.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { TokenInterceptor } from './shared/classes/token.interceptor';
     FindCoworkingPipe,
     ProfileSettingsComponent,
     LoginPageComponent,
-    RegistrationPageComponent
+    RegistrationPageComponent,
+    FavouritesPageComponent
   ],
   imports: [
     BrowserModule,

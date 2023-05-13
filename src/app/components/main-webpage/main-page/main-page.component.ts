@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { coworkings as data } from 'src/app/data/coworkings';
 import { ICoworking } from 'src/app/interfaces/interfaces';
-
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-main-page',
@@ -15,3 +15,5 @@ export class MainPageComponent {
   coworkings: ICoworking[] = data
   length = this.coworkings.filter(p => p.title.toLowerCase().includes(this.term.toLowerCase()));
 }
+
+
